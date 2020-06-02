@@ -6,8 +6,6 @@ Along with exploring state-of-the-art CNN models for classification, an understa
 
 A link to the Medium article can be found [here](https://medium.com/@stephen.parvaresh/i-am-a-chinese-crested-dog-creating-a-cnn-dog-classifier-8bd284fcf005).
 
-## Project Instructions
-
 ### Instructions
 
 Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).  
