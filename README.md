@@ -115,4 +115,4 @@ When you are ready to submit your project, collect the following files and compr
 
 Alternatively, your submission could consist of the GitHub link to your repository.
 
-A link to the Medium article can be found [here] (https://medium.com/@stephen.parvaresh/i-am-a-chinese-crested-dog-creating-a-cnn-dog-classifier-8bd284fcf005)
+A link to the Medium article can be found [here](https://medium.com/@stephen.parvaresh/i-am-a-chinese-crested-dog-creating-a-cnn-dog-classifier-8bd284fcf005).
