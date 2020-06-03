@@ -2,17 +2,27 @@
 
 For this project, a Convolutional Neural Network was built to classify dog breeds by user-supplied images.  Given an image of a dog, the algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed.  
 
+Two models were created to classify user-supplied images of dogs or humans. The models' performance was measured by the accuracy score, as it is a simple measure of performance, and easily defined by the model. The first CNN model, using ResNet50, pre-defined bottleneck features, and two layers of varying nodes, utilizing sigmoid and relu activations, yielded an accuracy score of 80.26%. The second CNN model, using VGG16, pre-defined bottleneck features, and two layers of varying nodes, again utilizing sigmoid and relu activations, yielded an accuracy score of 77.15%. 
+
+For scoring images of dogs, the ResNet50 model performed better than the VGG16 model, returning more accurate labeling of dogs. However, the ResNet50 model seemed to perform less well when identifiying breeds of dogs when given images of humans, and only returned a few results for vastly different images of humans. This could be an issue of overfitting in the training stage. 
+
 Along with exploring state-of-the-art CNN models for classification, an understanding of the challenges involved in piecing together a series of models designed to perform various tasks in a data processing pipeline is shown.
 
 A link to the Medium article can be found [here](https://medium.com/@stephen.parvaresh/i-am-a-chinese-crested-dog-creating-a-cnn-dog-classifier-8bd284fcf005).
 
-### Instructions
+### Libraries Used
+- Keras
+- OpenCV
+- Matplotlib
+- Scipy
 
-Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).  
+### Instructions and Additional Files
 
-Download the [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip).  
+Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip), which contains test, train, and holdout datasets of dogs.   
 
-Donwload the [VGG-16 bottleneck features](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) for the dog dataset.
+Download the [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip), which contain test, train, and holdout datasets of humans. 
+
+Donwload the [VGG-16 bottleneck features](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) for the dog dataset, used in the second model.
 
 (Optional) __If you plan to install TensorFlow with GPU support on your local machine__, follow [the guide](https://www.tensorflow.org/install/) to install the necessary NVIDIA software on your system.  If you are using an EC2 GPU instance, you can skip this step.
 
